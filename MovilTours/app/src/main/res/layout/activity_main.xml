@@ -17,7 +17,7 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"/>
-    
+
     <TextView
             android:id="@+id/tvAppName"
             android:layout_width="wrap_content"
@@ -29,7 +29,7 @@
             app:layout_constraintTop_toBottomOf="@+id/tvBienvenido"
             app:layout_constraintBottom_toBottomOf="parent"
 
-            app:layout_constraintVertical_bias="0.01" />
+            app:layout_constraintVertical_bias="0.01"/>
 
     <Button
             android:id="@+id/btnExplorar"
