@@ -31,9 +31,9 @@ class RecyclerViewActivity : AppCompatActivity() {
     }
 
     fun onItemSelected(tour: Tour) {
-        Toast.makeText(this, tour.toString(), Toast.LENGTH_SHORT).show()
-        val intent = Intent(this, Test::class.java)
-        intent.putExtra(Test.tour_name, tour)
+        Toast.makeText(this, tour.toString(), Toast.LENGTH_LONG).show()
+        val intent = Intent(this, MapActivity::class.java)
+        intent.putExtra(MapActivity.tour_name, tour)
         startActivity(intent)
     }
 }

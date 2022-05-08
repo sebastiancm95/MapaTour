@@ -51,7 +51,7 @@
             android:layout_marginHorizontal="64dp"
 
             android:text="Visualizar tour"
-            />
+    />
 
     <Button
             android:id="@+id/btnVolver"
