@@ -1,5 +1,6 @@
 package com.example.moviltours
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -30,6 +31,9 @@ class RecyclerViewActivity : AppCompatActivity() {
     }
 
     fun onItemSelected(tour: Tour) {
-        Toast.makeText(this, tour.name, Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, tour.toString(), Toast.LENGTH_SHORT).show()
+        val intent = Intent(this, Test::class.java)
+        intent.putExtra(Test.tour_name, tour)
+        startActivity(intent)
     }
 }
