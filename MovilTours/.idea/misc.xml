@@ -3,15 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/sebas/Documents/GitHub/MapaTour/MovilTours/app/src/main/res/layout/activity_main.xml" value="0.16168478260869565" />
+        <entry key="..\:/Users/sebas/Documents/GitHub/MapaTour/MovilTours/app/src/main/res/drawable/rounded_rectangle.xml" value="0.1" />
+        <entry key="..\:/Users/sebas/Documents/GitHub/MapaTour/MovilTours/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Users/sebas/Documents/GitHub/MapaTour/MovilTours/app/src/main/res/layout/activity_map.xml" value="0.11854103343465046" />
         <entry key="..\:/Users/sebas/Documents/GitHub/MapaTour/MovilTours/app/src/main/res/layout/activity_recycler_view.xml" value="0.1" />
         <entry key="..\:/Users/sebas/Documents/GitHub/MapaTour/MovilTours/app/src/main/res/layout/fragment_map.xml" value="0.16168478260869565" />
-        <entry key="..\:/Users/sebas/Documents/GitHub/MapaTour/MovilTours/app/src/main/res/layout/item_tour.xml" value="0.17307692307692307" />
+        <entry key="..\:/Users/sebas/Documents/GitHub/MapaTour/MovilTours/app/src/main/res/layout/item_tour.xml" value="0.4" />
         <entry key="..\:/Users/sebas/Documents/GitHub/MapaTour/MovilTours/app/src/main/res/layout/tem_tour.xml" value="0.264" />
       </map>
     </option>
   </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_15" project-jdk-name="15" project-jdk-type="JavaSDK" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_15" default="true" project-jdk-name="15" project-jdk-type="JavaSDK" />
 </project>
