@@ -5,65 +5,78 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#00ACC1"
+        android:background="#03fcb1"
         tools:context=".MainActivity">
+
     <TextView
             android:id="@+id/tvBienvenido"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Bienvenido a"
-            app:layout_constraintVertical_bias="0.25"
+            android:textSize="40sp"
+            android:textColor="#eb6080"
+            android:textStyle="bold"
+            android:text="Bienvenido"
+            app:layout_constraintVertical_bias="0.156"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
-    
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"/>
+
     <TextView
-            android:id="@+id/tvAppName"
+            android:id="@+id/tvVowel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="MovilTours"
-
+            android:textSize="40sp"
+            android:textColor="#eb6080"
+            android:textStyle="bold"
+            android:text="a"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tvBienvenido"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.01"/>
 
-            app:layout_constraintVertical_bias="0.01" />
+    <TextView
+            android:id="@+id/tvAppName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:textColor="#eb6080"
+            android:textStyle="bold"
+            android:text="MovilTours"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvVowel"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.01"/>
 
     <Button
             android:id="@+id/btnExplorar"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-
+            android:layout_width="169dp"
+            android:layout_height="71dp"
+            android:layout_marginStart="64dp"
+            android:layout_marginEnd="64dp"
+            android:backgroundTint="#eb6080"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-
-            app:layout_constraintVertical_bias="0.65"
-
-            android:layout_marginStart="64dp"
-            android:layout_marginEnd="64dp"
-
+            app:layout_constraintVertical_bias="0.527"
             android:text="Explorar tours"/>
 
     <Button
             android:id="@+id/btnAcercaDe"
-
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-
+            android:layout_width="130dp"
+            android:layout_height="44dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            android:backgroundTint="#eb6080"
             app:layout_constraintTop_toBottomOf="@+id/btnExplorar"
             app:layout_constraintBottom_toBottomOf="parent"
-
-            app:layout_constraintVertical_bias="0.01"
-
+            app:layout_constraintVertical_bias="0.61"
             android:layout_marginStart="64dp"
             android:layout_marginEnd="64dp"
-
-            android:text="Acerca de"/>
+            android:text="Acerca de" app:layout_constraintHorizontal_bias="0.496"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
