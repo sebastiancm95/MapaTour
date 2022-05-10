@@ -28,14 +28,13 @@ class RecyclerViewActivity : AppCompatActivity() {
         val adRequest = AdRequest.Builder().build()
         binding.addListaTours.loadAd(adRequest)
         binding.addListaTours.adListener = object : AdListener() {
-
             override fun onAdLoaded() {
-                mostrarToast()
+                showToast()
             }
         }
     }
 
-    private fun mostrarToast() {
+    private fun showToast() {
         val mensaje = "En un segundo verás un increíble anuncio"
         Toast.makeText(this, mensaje, Toast.LENGTH_LONG).show()
     }
