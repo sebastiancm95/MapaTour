@@ -35,8 +35,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tvBienvenido"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintVertical_bias="0.01"/>
-
+            app:layout_constraintVertical_bias="0.013"/>
     <TextView
             android:id="@+id/tvAppName"
             android:layout_width="wrap_content"
@@ -49,12 +48,11 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tvVowel"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintVertical_bias="0.01"/>
-
+            app:layout_constraintVertical_bias="0.019" app:layout_constraintHorizontal_bias="0.497"/>
     <Button
             android:id="@+id/btnExplorar"
-            android:layout_width="169dp"
-            android:layout_height="71dp"
+            android:layout_width="188dp"
+            android:layout_height="66dp"
             android:layout_marginStart="64dp"
             android:layout_marginEnd="64dp"
             android:backgroundTint="#eb6080"
@@ -62,21 +60,21 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintVertical_bias="0.527"
-            android:text="Explorar tours"/>
-
+            app:layout_constraintVertical_bias="0.524"
+            android:text="Explorar tours" app:layout_constraintHorizontal_bias="0.494"/>
     <Button
-            android:id="@+id/btnAcercaDe"
-            android:layout_width="130dp"
-            android:layout_height="44dp"
+            android:id="@+id/btnPatrocinador"
+            android:layout_width="160dp"
+            android:layout_height="54dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:backgroundTint="#eb6080"
             app:layout_constraintTop_toBottomOf="@+id/btnExplorar"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintVertical_bias="0.61"
+            app:layout_constraintVertical_bias="0.589"
             android:layout_marginStart="64dp"
             android:layout_marginEnd="64dp"
-            android:text="Acerca de" app:layout_constraintHorizontal_bias="0.496"/>
+            android:text="Patrocinador"
+            app:layout_constraintHorizontal_bias="0.495"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

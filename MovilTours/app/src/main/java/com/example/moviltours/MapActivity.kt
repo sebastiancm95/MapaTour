@@ -21,6 +21,14 @@ class MapActivity : AppCompatActivity(), OnMapReadyCallback {
     private lateinit var binding: ActivityMapBinding
     private lateinit var map: GoogleMap
     private lateinit var _tour: Tour
+    private val travel = listOf(
+        LatLng(10.300458, -85.842111),
+        LatLng(10.300494, -85.843499),
+        LatLng(10.298579, -85.842683),
+        LatLng(10.298354, -85.841281),
+        LatLng(10.297491, -85.841067),
+        LatLng(10.294749, -85.845673)
+    )
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -49,8 +57,8 @@ class MapActivity : AppCompatActivity(), OnMapReadyCallback {
         polylineOptions.width(25f)
         polylineOptions.color(ContextCompat.getColor(this, R.color.yellow))
         polylineOptions.add(LatLng(_tour.latitude, _tour.longitude))
-        if (!_tour.travel.isEmpty()) {
-            for (item in _tour.travel) {
+        if (_tour.name == "Tamarindo") {
+            for (item in travel) {
                 polylineOptions.add(item)
             }
         } else {

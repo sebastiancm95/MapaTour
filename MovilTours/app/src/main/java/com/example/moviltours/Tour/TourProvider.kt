@@ -1,5 +1,7 @@
 package com.example.moviltours.Tour
 
+import com.google.android.gms.maps.model.LatLng
+
 class TourProvider {
     companion object {
         val tourList = listOf<Tour>(
