@@ -5,7 +5,9 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.moviltours.adapter.TourAdapter
+import com.example.moviltours.Tour.Adapter.TourAdapter
+import com.example.moviltours.Tour.Tour
+import com.example.moviltours.Tour.TourProvider
 import com.example.moviltours.databinding.ActivityRecyclerViewBinding
 import com.google.android.gms.ads.AdListener
 import com.google.android.gms.ads.AdRequest
@@ -20,23 +22,23 @@ class RecyclerViewActivity : AppCompatActivity() {
         setContentView(binding.root)
         initRecyclerView()
 
-        initLoadAds ()
+        initLoadAds()
     }
 
-    private fun initLoadAds () {
-        val adRequest = AdRequest.Builder ().build()
+    private fun initLoadAds() {
+        val adRequest = AdRequest.Builder().build()
 
         binding.addListaTours.loadAd(adRequest)
 
         binding.addListaTours.adListener = object : AdListener() {
 
-            override fun onAdLoaded () {
+            override fun onAdLoaded() {
                 mostrarToast()
             }
         }
     }
 
-    private fun mostrarToast () {
+    private fun mostrarToast() {
         val mensaje = "En un segundo verás un increíble anuncio"
 
         Toast.makeText(this, mensaje, Toast.LENGTH_LONG).show()

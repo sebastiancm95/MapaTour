@@ -1,4 +1,4 @@
-package com.example.moviltours
+package com.example.moviltours.Tour
 
 class TourProvider {
     companion object {

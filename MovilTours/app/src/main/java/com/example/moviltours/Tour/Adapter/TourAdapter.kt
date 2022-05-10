@@ -1,10 +1,10 @@
-package com.example.moviltours.adapter
+package com.example.moviltours.Tour.Adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.moviltours.R
-import com.example.moviltours.Tour
+import com.example.moviltours.Tour.Tour
 
 class TourAdapter(private val tourList: List<Tour>, private val onClickListener: (Tour) -> Unit) :
     RecyclerView.Adapter<TourViewHolder>() {
