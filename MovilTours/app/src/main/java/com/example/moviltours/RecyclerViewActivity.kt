@@ -21,15 +21,12 @@ class RecyclerViewActivity : AppCompatActivity() {
         binding = ActivityRecyclerViewBinding.inflate(layoutInflater)
         setContentView(binding.root)
         initRecyclerView()
-
         initLoadAds()
     }
 
     private fun initLoadAds() {
         val adRequest = AdRequest.Builder().build()
-
         binding.addListaTours.loadAd(adRequest)
-
         binding.addListaTours.adListener = object : AdListener() {
 
             override fun onAdLoaded() {
@@ -40,7 +37,6 @@ class RecyclerViewActivity : AppCompatActivity() {
 
     private fun mostrarToast() {
         val mensaje = "En un segundo verás un increíble anuncio"
-
         Toast.makeText(this, mensaje, Toast.LENGTH_LONG).show()
     }
 

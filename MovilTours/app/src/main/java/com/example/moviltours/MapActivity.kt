@@ -26,19 +26,14 @@ class MapActivity : AppCompatActivity(), OnMapReadyCallback {
         super.onCreate(savedInstanceState)
         binding = ActivityMapBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-        binding.btnVolver.setOnClickListener { onBackPressed() }
         binding.btnTourSugerido.setOnClickListener { createPolyLines() }
         binding.btnCambiarTipoMapa.setOnClickListener { cambiarTipoMapa() }
-        _tour = intent.getSerializableExtra(Test.tour_name) as Tour
-
+        _tour = intent.getSerializableExtra(tour_name) as Tour
         binding.tvTituloMapa.text = _tour.name
-
         createFragment()
     }
 
     private fun cambiarTipoMapa() {
-
         if (map.mapType == GoogleMap.MAP_TYPE_SATELLITE) {
             map.mapType = GoogleMap.MAP_TYPE_NORMAL
         } else {
@@ -54,7 +49,6 @@ class MapActivity : AppCompatActivity(), OnMapReadyCallback {
         polylineOptions.width(25f)
         polylineOptions.color(ContextCompat.getColor(this, R.color.yellow))
         polylineOptions.add(LatLng(_tour.latitude, _tour.longitude))
-
         if (!_tour.travel.isEmpty()) {
             for (item in _tour.travel) {
                 polylineOptions.add(item)
@@ -62,7 +56,6 @@ class MapActivity : AppCompatActivity(), OnMapReadyCallback {
         } else {
             Toast.makeText(this, "Este destino no posee un tour planificado", Toast.LENGTH_LONG).show()
         }
-
         val polyLine = map.addPolyline(polylineOptions)
     }
 

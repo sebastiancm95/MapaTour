@@ -15,8 +15,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toTopOf="@id/addListaTours"
-    />
+            app:layout_constraintBottom_toTopOf="@id/addListaTours"/>
 
     <com.google.android.gms.ads.AdView
             android:id="@+id/addListaTours"
@@ -27,7 +26,6 @@
             app:layout_constraintTop_toBottomOf="@id/recyclerTours"
             app:layout_constraintBottom_toBottomOf="parent"
             ads:adSize="BANNER"
-            ads:adUnitId="ca-app-pub-3940256099942544/6300978111"
-    />
+            ads:adUnitId="ca-app-pub-3940256099942544/6300978111"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
