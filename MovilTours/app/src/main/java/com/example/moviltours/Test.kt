@@ -3,6 +3,7 @@ package com.example.moviltours
 import android.os.Bundle
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.example.moviltours.Tour.Tour
 
 class Test : AppCompatActivity() {
 

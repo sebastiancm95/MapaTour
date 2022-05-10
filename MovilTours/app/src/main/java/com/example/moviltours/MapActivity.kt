@@ -4,10 +4,10 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
+import com.example.moviltours.Tour.Tour
 import com.example.moviltours.databinding.ActivityMapBinding
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
-import com.google.android.gms.maps.GoogleMapOptions
 import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.*
@@ -29,7 +29,7 @@ class MapActivity : AppCompatActivity(), OnMapReadyCallback {
 
         binding.btnVolver.setOnClickListener { onBackPressed() }
         binding.btnTourSugerido.setOnClickListener { createPolyLines() }
-        binding.btnCambiarTipoMapa.setOnClickListener { cambiarTipoMapa () }
+        binding.btnCambiarTipoMapa.setOnClickListener { cambiarTipoMapa() }
         _tour = intent.getSerializableExtra(Test.tour_name) as Tour
 
         binding.tvTituloMapa.text = _tour.name
@@ -37,12 +37,11 @@ class MapActivity : AppCompatActivity(), OnMapReadyCallback {
         createFragment()
     }
 
-    private fun cambiarTipoMapa () {
+    private fun cambiarTipoMapa() {
 
         if (map.mapType == GoogleMap.MAP_TYPE_SATELLITE) {
             map.mapType = GoogleMap.MAP_TYPE_NORMAL
-        }
-        else {
+        } else {
             map.mapType = GoogleMap.MAP_TYPE_SATELLITE
         }
     }
@@ -60,8 +59,7 @@ class MapActivity : AppCompatActivity(), OnMapReadyCallback {
             for (item in _tour.travel) {
                 polylineOptions.add(item)
             }
-        }
-        else {
+        } else {
             Toast.makeText(this, "Este destino no posee un tour planificado", Toast.LENGTH_LONG).show()
         }
 

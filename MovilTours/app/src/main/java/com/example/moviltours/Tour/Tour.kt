@@ -1,4 +1,4 @@
-package com.example.moviltours
+package com.example.moviltours.Tour
 
 import com.google.android.gms.maps.model.LatLng
 
@@ -8,5 +8,5 @@ data class Tour(
     val longitude: Double,
     val price: String,
     val photo: String,
-    val travel: List <LatLng>
+    val travel: List<LatLng>
 ) : java.io.Serializable

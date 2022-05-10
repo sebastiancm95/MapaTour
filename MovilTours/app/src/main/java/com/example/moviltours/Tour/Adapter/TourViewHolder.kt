@@ -1,9 +1,9 @@
-package com.example.moviltours.adapter
+package com.example.moviltours.Tour.Adapter
 
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.example.moviltours.Tour
+import com.example.moviltours.Tour.Tour
 import com.example.moviltours.databinding.ItemTourBinding
 
 class TourViewHolder(view: View) : RecyclerView.ViewHolder(view) {
